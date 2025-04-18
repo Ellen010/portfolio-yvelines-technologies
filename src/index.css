@@ -1,8 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/general-sans');
-
+@config "../../tailwind.config.js";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "tailwindcss";
+
 
 * {
   scroll-behavior: smooth;
