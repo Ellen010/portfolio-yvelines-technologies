@@ -29,12 +29,6 @@ const Navbar = () => {
                         New Digital Solutions
                     </p>
 
-                    <button
-                        onClick={toggleMenu}
-                        className="btn-menu"
-                        aria-label="Toggle menu">
-                        <img src={isOpen ? '../assets/close.svg' : '../assets/menu.svg'} alt="toggle" className="btn-menu-image" />
-                    </button>
 
                     <nav className="sm:flex hidden">
                         <NavItems />

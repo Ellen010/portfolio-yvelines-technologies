@@ -82,6 +82,19 @@ body {
   }
 }
 
+.text1  {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    font-family: 'General Sans', sans-serif;
+  }
+  @media (min-width: 640px) {
+    .custom-title {
+      font-size: 2.875rem;
+    }
+  }
+
 .nav-ul {
   display: flex;
   flex-direction: column;
@@ -260,13 +273,30 @@ body {
 }
 
 .waving-hand {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
+  animation: wave-spin 50s infinite linear;
+  transform-origin: center;
   display: inline-block;
 }
 
+
+@keyframes wave-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 .arrow-gradient {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.000025) 50%, rgba(255, 255, 255, 0.000025) 50%, rgba(255, 255, 255, 0.025) 100%);
+}
+.s-hero {
+  hight-minimum: screen;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
