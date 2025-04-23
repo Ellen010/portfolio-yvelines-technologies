@@ -82,18 +82,28 @@ body {
   }
 }
 
-.text1  {
+.hero-title {
     font-size: 1.875rem;
-    font-weight: 800;
-    color: white;
+    font-weight: 900;
+  background-image: linear-gradient(
+          to right,
+          #BEC1CF 60%,
+          #D5D8EA 60%,
+          #D5D8EA 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     text-align: center;
     font-family: 'General Sans', sans-serif;
+
   }
   @media (min-width: 640px) {
     .custom-title {
       font-size: 2.875rem;
     }
   }
+
 
 .nav-ul {
   display: flex;
@@ -207,6 +217,14 @@ body {
 }
 .btn:active {
   transform: scale(0.95);
+}
+
+.btn-section {
+  display: flex;
+  position: relative;
+  scroll-behavior: smooth;
+  height: .75rem;
+  width: .75rem;
 }
 
 .btn-ping {
@@ -326,6 +344,20 @@ body {
   width:100%;
   height:100%;
 }
+
+.canvas-section{
+  display: flex;
+  justifyContent: center;
+  alignItems: center;
+  flexDirection: column;
+}
+
+.canvas-p {
+  fontSize: 1rem;
+  color: #F1F1F1;
+  fontWeight: 800;
+  marginTop: 40;
+}
 .sd-hero-3 {
   position: absolute;
   top: 0;
@@ -338,4 +370,41 @@ body {
   padding-right: 1.25rem;
 
 }
+.hero-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  font-family: 'General Sans', sans-serif;
+}
+  @media (min-width: 640px) {
+    .hero-text {
+      font-size: 1.875rem;
+    }
+}
 
+.hero-btn {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .hero-btn {
+      width: fit-content;
+      min-width: 24rem;
+    }
+  }
+
+.hero-about-div {
+  position: absolute;
+  bottom: 1.75rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.hero-about {
+  width: fit-content;
+}

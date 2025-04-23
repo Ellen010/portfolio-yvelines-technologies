@@ -3,7 +3,6 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
-
 import Cube from '../components/Cube.jsx';
 import Rings from '../components/Rings.jsx';
 import ReactLogo from '../components/ReactLogo.jsx';
@@ -15,7 +14,6 @@ import { calculateSizes } from '../assets/constants/index.js';
 import { HackerRoom } from '../components/HackerRoom.jsx';
 
 const Hero = () => {
-    // Use media queries to determine screen size
     const isSmall = useMediaQuery({ maxWidth: 440 });
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
@@ -25,10 +23,10 @@ const Hero = () => {
     return (
         <section className="s-hero" id="home">
             <div className="sd-hero-1">
-                <p className="text1">
-                    Welcome to Yvelines Technologies <span className="waving-hand">💢</span>
+                <p className="hero-text">
+                    Welcome to my Portfolio Page <span className="waving-hand">💢</span>
                 </p>
-                <p className="text1">Building Products & Brands</p>
+                <p className="hero-title">Building Products & Brands</p>
             </div>
 
             <div className="sd-hero-2">
@@ -54,9 +52,9 @@ const Hero = () => {
                 </Canvas>
             </div>
 
-            <div className="">
-                <a href="#about" className="w-fit">
-                    <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+            <div className="hero-about-div">
+                <a href="#about" className="hero-about">
+                    <Button name="Let's work together" isBeam containerClass="hero-btn" />
                 </a>
             </div>
         </section>
