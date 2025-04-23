@@ -85,6 +85,7 @@ body {
 .hero-title {
     font-size: 1.875rem;
     font-weight: 900;
+  margin-bottom: 15em;
   background-image: linear-gradient(
           to right,
           #BEC1CF 60%,
@@ -315,7 +316,7 @@ body {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.000025) 50%, rgba(255, 255, 255, 0.000025) 50%, rgba(255, 255, 255, 0.025) 100%);
 }
 .s-hero {
-  hight-minimum: screen;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -329,20 +330,27 @@ body {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   gap: 0.75rem;
+  z-index: 10;
+  position: relative;
 }
 
 .sd-hero-2 {
   width:100%;
   height:100%;
+  z-index: 1;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+
 }
 .canvas-hero {
-  width:100%;
-  height:100%;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .canvas-section{
