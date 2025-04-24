@@ -22,14 +22,14 @@ const Hero = () => {
 
     return (
         <section className="s-hero" id="home">
-            <div className="sd-hero-1">
-                <p className="hero-text">
+            <div className="sd-hero-o">
+                <p className="hero-title">
                     Welcome to my Portfolio Page <span className="waving-hand">💢</span>
                 </p>
-                <p className="hero-title">Building Products & Brands</p>
+                <p className="hero-text">Building Products & Brands</p>
             </div>
 
-            <div className="sd-hero-2">
+            <div className="sd-hero-t">
                 <Canvas className="canvas-hero">
                     <Suspense fallback={<CanvasLoader />}>
                         <Leva hidden />

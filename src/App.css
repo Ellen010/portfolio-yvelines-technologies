@@ -82,10 +82,10 @@ body {
   }
 }
 
-.hero-title {
+.hero-text {
     font-size: 1.875rem;
     font-weight: 900;
-  margin-bottom: 15em;
+  padding-bottom: 1rem;
   background-image: linear-gradient(
           to right,
           #BEC1CF 60%,
@@ -105,7 +105,20 @@ body {
     }
   }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
+.nav-div {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .nav-ul {
   display: flex;
   flex-direction: column;
@@ -186,7 +199,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 0.5rem;
-  padding-bottom: 15.625rem;
+  padding-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -203,6 +216,26 @@ body {
   color: white;
 }
 
+  .nav-sm {
+    display: none;
+  }
+
+@media (min-width: 640px) {
+  .your-class {
+    display: flex;
+  }
+}
+
+.nav-op {
+  max-height: 100vh;
+}
+.nav-cl {
+  max-height: 0;
+}
+
+.nav-p {
+  padding: 5px;
+}
 .btn {
   display: flex;
   gap: 1rem;
@@ -258,6 +291,10 @@ body {
 .btn-menu-image {
   width: 0.75rem;
   height: 0.75rem;
+}
+
+.nav-items {
+  padding: 20rem;
 }
 
 .hero_tag {
@@ -322,19 +359,18 @@ body {
   flex-direction: column;
   position: relative;
 }
-.sd-hero-1 {
+.sd-hero-o {
   width:100%;
-  margin: 5rem auto;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding: 1.25rem;
   gap: 0.75rem;
   z-index: 10;
   position: relative;
 }
 
-.sd-hero-2 {
+.sd-hero-t {
   width:100%;
   height:100%;
   z-index: 1;
@@ -343,7 +379,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-
+  padding: 1rem;
 }
 .canvas-hero {
   width: 100vw;
@@ -351,6 +387,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  margin: 1rem;
 }
 
 .canvas-section{
@@ -364,7 +401,7 @@ body {
   fontSize: 1rem;
   color: #F1F1F1;
   fontWeight: 800;
-  marginTop: 40;
+  margin-top: 3rem;
 }
 .sd-hero-3 {
   position: absolute;
@@ -378,27 +415,32 @@ body {
   padding-right: 1.25rem;
 
 }
-.hero-text {
+.hero-title {
   font-size: 1.25rem;
   font-weight: 500;
   color: white;
   text-align: center;
   font-family: 'General Sans', sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
   @media (min-width: 640px) {
-    .hero-text {
+    .hero-title {
       font-size: 1.875rem;
     }
 }
 
 .hero-btn {
     width: 100%;
+  padding: 1.25rem;
+  margin-top: 20rem;
   }
 
   @media (min-width: 640px) {
     .hero-btn {
       width: fit-content;
       min-width: 24rem;
+      padding: 1.25rem;
     }
   }
 
@@ -409,8 +451,8 @@ body {
   right: 0;
   width: 100%;
   z-index: 10;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding: 1.25rem;
+  margin-top: 3rem;
 }
 
 .hero-about {
