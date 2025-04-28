@@ -6,8 +6,7 @@
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: auto;
   text-align: center;
   scroll-behavior: smooth;
 }
@@ -45,7 +44,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 2rem;
 }
 
 .read-the-docs {
@@ -56,11 +55,6 @@
 body {
   background: #010103;
   font-family: 'General Sans', sans-serif;
-}
-
-.c-space {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 @media (min-width: 640px) {
   .c-space {
@@ -106,16 +100,17 @@ body {
   }
 
 .navbar {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 50;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 .nav-div {
   max-width: 80rem;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -123,6 +118,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
   position: relative;
   z-index: 20;
@@ -131,7 +127,7 @@ body {
 @media (min-width: 640px) {
   .nav-ul {
     flex-direction: row;
-    color: lightblue;
+    color: white;
   }
 }
 @media (min-width: 768px) {
@@ -142,10 +138,11 @@ body {
 }
 
 .nav-li {
-  color: lightblue;
+  padding-left: 0.01rem;
+  padding-right: 0.01rem;
+  color: white;
   font-family: 'General Sans', sans-serif;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+
 }
 .nav-li:hover {
   color: white;
@@ -209,7 +206,7 @@ body {
   font-weight: bold;
   font-size: 3rem;
   font-family: 'Bigola Display', serif;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.08rem;
 
 }
   .title:hover {
@@ -369,6 +366,14 @@ body {
   z-index: 10;
   position: relative;
 }
+@media (min-width: 640px) {
+  .sd-hero-o {
+    margin-top: 1rem;
+    gap: 0.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
 
 .sd-hero-t {
   width:100%;
@@ -457,4 +462,9 @@ body {
 
 .hero-about {
   width: fit-content;
+}
+
+.c-space {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }

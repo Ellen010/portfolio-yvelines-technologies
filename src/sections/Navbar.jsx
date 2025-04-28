@@ -6,7 +6,7 @@ const NavItems = ({ onClick = () => {} }) => (
     <ul className="nav-ul">
         {navLinks.map((item) => (
             <li key={item.id} className="nav-li">
-                <a href={item.href} className="nav-li_a" onClick={onClick}>
+                <a href={item.href}  onClick={onClick}>
                     {item.name}
                 </a>
             </li>
@@ -29,8 +29,7 @@ const Navbar = () => {
                         New Digital Solutions
                     </p>
 
-
-                    <nav className="sm:flex hidden">
+                    <nav className="nav-ul">
                         <NavItems />
                     </nav>
                 </div>
