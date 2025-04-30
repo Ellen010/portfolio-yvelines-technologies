@@ -468,3 +468,12 @@ body {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+
+.grid-one {
+  width: 25rem;
+   height:40rem;
+  opacity: 60%;
+
+}
+
+/*sm:h-[276px] object-contain*/
