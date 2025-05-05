@@ -511,3 +511,24 @@ body {
   border: solid 2px black;
   border-radius: 4px;
 }
+.grid-two {
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+}
+@media (min-width: 640px) {
+  height: 276px;
+}
+.grid-headtext {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-family: 'General Sans', sans-serif;
+}
+
+.grid-subtext {
+  color: #afb0b6;
+  font-size: 1rem;
+  font-family: 'General Sans', sans-serif;
+}
