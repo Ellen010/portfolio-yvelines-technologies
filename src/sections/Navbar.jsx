@@ -5,8 +5,8 @@ import { navLinks } from '../assets/constants/index.js';
 const NavItems = ({ onClick = () => {} }) => (
     <ul className="nav-ul">
         {navLinks.map((item) => (
-            <li key={item.id} className="nav-li">
-                <a href={item.href}  onClick={onClick}>
+            <li key={item.id}>
+                <a  className="nav-li" href={item.href}  onClick={onClick}>
                     {item.name}
                 </a>
             </li>

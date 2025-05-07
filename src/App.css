@@ -122,43 +122,55 @@ body {
   gap: 1.5rem;
   position: relative;
   z-index: 20;
-  color: white;
 }
 @media (min-width: 640px) {
   .nav-ul {
     flex-direction: row;
-    color: white;
   }
 }
 @media (min-width: 768px) {
   .nav-ul {
     gap: 1.5rem;
-    color: white;
   }
 }
 
 .nav-li {
-  padding-left: 0.01rem;
-  padding-right: 0.01rem;
+  font-size: 1rem;
+  padding: 0 0.25rem;
   color: white;
   font-family: 'General Sans', sans-serif;
+  will-change: transform, text-shadow, color;
+  transition:
+          transform 200ms ease-in-out,
+          text-shadow 200ms ease-in-out,
+          color 200ms ease-in-out;
+}
 
-}
 .nav-li:hover {
-  color: white;
+  transform: scale(1.5);
+  color: #9caea9;
+  text-shadow: 10px 10px 40px rgba(255, 255, 255, 0.6);
 }
+
 @media (max-width: 639px) {
   .nav-li {
     background-color: #1f2937;
     width: 100%;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: 0.5rem 1.25rem;
     border-radius: 0.375rem;
-    color: white;
+    filter: none;
+    text-shadow: none;
+  }
+
+  .nav-li:hover {
+    transform: scale(1.3);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    color: #9caea9;
   }
 }
 
-.nav-li-a {
+
+/*.nav-li-a {
   font-size: 1.125rem;
   transition: color 150ms ease-in-out;
   color: white;
@@ -171,7 +183,7 @@ body {
 }
 .nav-li-a:hover {
   color: white;
-}
+}*/
 
 .nav-sidebar {
   position: absolute;
@@ -201,16 +213,28 @@ body {
   margin-right: auto;
   color: white;
 }
+
 .title {
   color: #9caea9;
   font-weight: bold;
   font-size: 3rem;
   font-family: 'Bigola Display', serif;
   letter-spacing: 0.08rem;
-
+  will-change: filter;
+  transition: filter 300ms;
 }
-  .title:hover {
+
+.title:hover {
   color: white;
+  filter: drop-shadow(0 0 3em #bcd0c7);
+}
+.title.react:hover {
+  color: white;
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.title.vite:hover {
+  color: white;
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
   .nav-sm {
