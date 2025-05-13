@@ -278,7 +278,6 @@ export const workExperiences = [
         id: 3,
         name: 'Telus',
         pos: 'Data Analyst',
-        duration: '2023',
         title: "Telus is an AI company that combines the power of human intelligence and high-quality data to design. It's goals to train and improve your AI models and applications.",
         icon: '/assets/notion.svg',
         animation: 'salute',

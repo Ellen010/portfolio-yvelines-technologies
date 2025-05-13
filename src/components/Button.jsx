@@ -4,7 +4,7 @@ const Button = ({ name, isBeam = false, containerClass }) => {
             {isBeam && (
                 <span className="btn-section">
           <span className="btn-ping"></span>
-          <span className="btn-ping_dot"></span>
+          <span className="btn-ping-dot"></span>
         </span>
             )}
             {name}

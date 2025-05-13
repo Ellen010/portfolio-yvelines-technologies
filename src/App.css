@@ -11,6 +11,14 @@
   scroll-behavior: smooth;
 }
 
+/* main app styles */
+.div-app {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -293,7 +301,7 @@ body {
   opacity: 0.75;
 }
 
-.btn-ping_dot {
+.btn-ping-dot {
   position: relative;
   display: inline-flex;
   height: 0.75rem;
@@ -555,4 +563,42 @@ body {
   color: #afb0b6;
   font-size: 1rem;
   font-family: 'General Sans', sans-serif;
+}
+
+/*alert classes */
+.alert-container{
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.alert-div {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  color: #c7d2fe;
+  line-height: 1.5;
+  border-radius: 0.375rem;
+}
+
+.alert-div.success {
+  background-color: #1e40af;
+}
+
+.alert-div.lg {
+  border-radius: 9999px;
+  display: inline-flex;
+}
+
+.alert-sign.success {
+  background-color: #3b82f6;
+}
+
+.alert-p  {
+  margin-right: 0.5rem;
+  text-align: left;
 }

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import { navLinks } from '../assets/constants/index.js';
 
 const NavItems = ({ onClick = () => {} }) => (
