@@ -9,7 +9,7 @@ const CanvasLoader = () => {
             className="canvas-section">
 
             <span className="canvas-loader"></span>
-            <p className="canvas-loader">
+            <p className="canvas-p">
                 {progress !== 0 ? `${progress.toFixed(2)}%` : 'Loading...'}
             </p>
         </Html>
