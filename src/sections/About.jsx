@@ -15,23 +15,17 @@ const About = () => {
     };
 
     return (
-        <section className="c-space my-20" id="about">
-            <div className="grid">
-                <div className="col-about ">
+        <section className="about">
                     <div className="grid-container">
-                        <img src="assets/grid1.png" alt="grid-1" className="grid-one" />
-
-                        <div>
+                        <img src="assets/grid1.png" alt="grid-one" className="grid-one" />
                             <p className="grid-headtext">Hi, I’m Elena</p>
                             <p className="grid-subtext">
                                 With over 2 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
                                 and responsive websites.
                             </p>
-                        </div>
                     </div>
-                </div>
 
-                <div className="col-span-1 xl:row-span-3">
+                <div className="grid-two-div">
                     <div className="grid-container">
                         <img src="assets/grid2.png" alt="grid-2" className="grid-two" />
 
@@ -45,9 +39,9 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="col-span-1 xl:row-span-4">
+                <div className="grid-two-div .xl\\:row-span-4">
                     <div className="grid-container">
-                        <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
+                        <div className="globe-container">
                             <Globe
                                 height={326}
                                 width={326}
@@ -99,7 +93,6 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     );
 };
