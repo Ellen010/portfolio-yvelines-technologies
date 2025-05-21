@@ -282,6 +282,8 @@ body {
   transform: scale(0.95);
 }
 
+/* main btn styles */
+
 .btn-section {
   display: flex;
   position: relative;
