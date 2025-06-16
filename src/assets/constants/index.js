@@ -32,11 +32,11 @@ export const clientReviews = [
     },
     {
         id: 2,
-        name: 'More info is coming soon',
-        position: 'More info is coming soon',
+        name: '3Degrees Inc',
+        position: 'Owner',
         img: 'assets/review2.png',
         review:
-            'More info is coming soon',
+            'Yvelines Technologies helped our business to be present online and to attract more clients. Fast, efficient and top-notch service.',
     },
     {
         id: 3,
@@ -93,11 +93,11 @@ export const myProjects = [
         ],
     },
     {
-        title: 'More info is coming soon',
-        desc: 'More info is coming soon',
+        title: 'Financial Instruments Explained.',
+        desc: 'Types and Asset Classes',
         subdesc:
-            'More info is coming soon',
-        href: 'More info is coming soon',
+            'HTML nad CSS website that offers profound information reg   regarding financial instruments and its description.',
+        href: 'https://financial-instruments-explained.vercel.app/',
         texture: '/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
         logoStyle: {
@@ -109,8 +109,8 @@ export const myProjects = [
         tags: [
             {
                 id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'HTML',
+                path: '/assets/html.svg',
             },
             {
                 id: 2,
