@@ -23,19 +23,20 @@ const Navbar = () => {
         <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
             <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-center py-5 mx-auto c-space">
-                    <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
+                    <img src="/logo.png" alt="logo" className="h-36 p-6 will-change-[filter] transition-[filter] duration-300 rounded-[2em]" />
+                    <a href="/" className="text-neutral-400 font-bold text-2xl hover:text-white transition-all duration-300 transform hover:scale-[1.25]">
 
-                        New Digital Solutions
+                        Yvelines Technologies
                     </a>
 
-                    <nav className="nav-ul">
+                    <nav className="text-l hover:text-white transition-all duration-300 transform hover:scale-[1.15]">
                         <NavItems />
                     </nav>
                 </div>
             </div>
 
             <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-                <nav className="nav-items">
+                <nav className="text-l hover:text-white transition-all duration-300 transform hover:scale-[1.25]">
                     <NavItems onClick={closeMenu} />
                 </nav>
             </div>
