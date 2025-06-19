@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { navLinks } from '../assets/constants/index.js';
 
 const NavItems = ({ onClick = () => {} }) => (
-    <ul className="nav-ul">
+    <ul className="nav-ul font-bungee">
         {navLinks.map((item) => (
             <li key={item.id}>
                 <a  className="nav-li" href={item.href}  onClick={onClick}>
@@ -36,7 +36,7 @@ const Navbar = () => {
             </div>
 
             <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-                <nav className="text-l hover:text-white transition-all duration-300 transform hover:scale-[1.25]">
+                <nav className="font-bungee text-l hover:text-white transition-all duration-300 transform hover:scale-[1.25]">
                     <NavItems onClick={closeMenu} />
                 </nav>
             </div>

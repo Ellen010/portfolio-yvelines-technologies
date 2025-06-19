@@ -6,6 +6,7 @@ export default {
             fontFamily: {
                 generalsans: ['General Sans', 'sans-serif'],
                 monoton: ['"Monoton"', 'serif'],
+                bungee: ['"Bungee"', 'serif'],
             },
             colors: {
                 black: {
