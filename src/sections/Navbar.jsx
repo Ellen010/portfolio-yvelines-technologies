@@ -24,7 +24,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-center py-5 mx-auto c-space">
                     <img src="/logo.png" alt="logo" className="h-36 p-6 will-change-[filter] transition-[filter] duration-300 rounded-[2em]" />
-                    <a href="/" className="text-neutral-400 font-bold text-2xl hover:text-white transition-all duration-300 transform hover:scale-[1.25]">
+                    <a href="/" className="text-neutral-400 font-monoton font-bold text-4xl hover:text-white transition-all duration-300 transform hover:scale-[1.25]">
 
                         Yvelines Technologies
                     </a>
