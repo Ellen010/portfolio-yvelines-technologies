@@ -27,7 +27,6 @@ const Hero = () => {
                 <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans pt-2">
                     Welcome to my Portfolio Page <span className="waving-hand">💢</span>
                 </p>
-                <p className="hero_tag text-gray_gradient">Building Products & Brands</p>
             </div>
 
             <div className="w-full h-full absolute inset-0 p-16">
@@ -56,7 +55,7 @@ const Hero = () => {
 
             <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
                 <a href="#about" className="w-fit">
-                    <Button name="Let's work together" containerClass="sm:w-fit w-full sm:min-w-96" />
+                    <Button name="Let's work together" containerClass="sm:w-fit w-full sm:min-w-96 hover:bg-red-800 hover:text-white transition-all duration-300" />
                 </a>
             </div>
         </section>

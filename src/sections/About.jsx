@@ -16,6 +16,7 @@ const About = () => {
 
     return (
         <section className="c-space my-20" id="about">
+            <h3 className="head-text pb-2">About</h3>
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
@@ -63,7 +64,7 @@ const About = () => {
                     <div>
                             <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
                             <p className="grid-subtext">I&apos;m based in Paris, France and most of my projects are done remotely.</p>
-                            <Button name="Contact Me" containerClass="w-full mt-10" />
+                            <Button name="Contact Me" containerClass="w-full mt-10 hover:bg-red-800 hover:text-white transition-all duration-300" />
                         </div>
                     </div>
                 </div>
