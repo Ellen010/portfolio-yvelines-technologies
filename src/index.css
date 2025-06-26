@@ -196,3 +196,7 @@ body {
         transform: rotate(0deg);
     }
 }
+
+.pixelated-image-card__pixel {
+    @apply absolute bg-gray-200;
+}
