@@ -26,9 +26,9 @@ export const clientReviews = [
         id: 1,
         name: 'Anna Simon',
         position: 'Director at Annas Business Consulting',
-        img: 'assets/review1.png',
+        img: 'assets/review1.jpg',
         review:
-            'Working with Yvelines Technoligies was a fantastic experience. My old website was transformed into a modern, user-friendly platform. Attention to details and commitment to quality during this project was unmatched. I highly recommend this company for any web dev projects.',
+            'Working with Yvelines Technologies was a fantastic experience. My old website was transformed into a modern, user-friendly platform. Attention to details and commitment to quality during this project was unmatched. I highly recommend this company for any web dev projects.',
     },
     {
         id: 2,
