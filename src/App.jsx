@@ -1,5 +1,3 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './index.css'
 import React from 'react'
 import Navbar from './sections/Navbar.jsx'
