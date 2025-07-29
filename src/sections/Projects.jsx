@@ -178,14 +178,14 @@ const Projects = () => {
                                 activeImage = "/assets/project-logo4.png";
                             } else if (i === 2 || i === 3) {
                                 fallbackImage = "/assets/project-logo3.png";
-                                activeImage = "/assets/project-logo11.png";
+                                activeImage = "/assets/project-logo1.png";
                             }
                         }
 
                         return (
                             <div
                                 key={i}
-                                className="relative w-60 h-60 rounded-2xl overflow-hidden group"
+                                className="relative bg-black-300 w-60 h-60 rounded-2xl overflow-hidden group"
                                 data-pixelated-image-reveal
                             >
                                 {/* Pixel grid */}
@@ -198,7 +198,7 @@ const Projects = () => {
                                 <img
                                     src={activeImage}
                                     alt={`project logo ${i}`}
-                                    className="absolute top-0 left-0 w-full h-full object-cover"
+                                    className="absolute bg-black-300 top-0 left-0 w-full h-full object-cover"
                                     data-pixelated-image-reveal-active
                                     style={{ display: "none" }}
                                 />
