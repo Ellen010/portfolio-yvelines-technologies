@@ -34,24 +34,10 @@ export const clientReviews = [
         id: 2,
         name: '3Degrees Inc',
         position: 'Owner',
-        img: 'assets/review2.png',
+        img: 'assets/project-logo3.png',
         review:
             'Yvelines Technologies helped our business to be present online and to attract more clients. Fast, efficient and top-notch service.',
-    },
-    {
-        id: 3,
-        name: 'More info is coming soon',
-        position: 'More info is coming soon',
-        img: 'assets/review2.png',
-        review:
-            'More info is coming soon',
-    },
-    {
-        name: 'More info is coming soon',
-        position: 'More info is coming soon',
-        img: 'assets/review2.png',
-        review:
-            'More info is coming soon', },
+    }
 ];
 
 export const myProjects = [
@@ -271,15 +257,16 @@ export const workExperiences = [
         pos: 'Software Developer- Full Stack ',
         duration: '2024',
         title: "NoPestsAllowed's aim is to provide worldwide application to centralize deposition about pests. Each deposition is verified by picture and user location. The Picture is geolocalised in order to define the deposition location. The picture must be a visual proof showing pests or many depositions against a place.",
-        icon: '/assets/figma.svg',
+        icon: 'assets/project-logo3.png',
         animation: 'clapping',
     },
     {
         id: 3,
         name: 'Telus',
         pos: 'Data Analyst',
+        duration: '',
         title: "Telus is an AI company that combines the power of human intelligence and high-quality data to design. It's goals to train and improve your AI models and applications.",
-        icon: '/assets/notion.svg',
+        icon: '/assets/project-logo001.png',
         animation: 'salute',
     },
 ];
