@@ -39,7 +39,7 @@ const About = () => {
 
     return (
         <section className="c-space my-20" id="about">
-            <h3 className="head-text pb-2">About</h3>
+            <h3 className="head-text pb-2 mb-5">About</h3>
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
@@ -48,7 +48,7 @@ const About = () => {
                         <div id="aboutme" >
                             <p className="grid-headtext g_fadeIn ">Hi, I’m Elena</p>
                             <p className="grid-subtext g_fadeIn"> <span className="text-white">  </span>
-                                    With over 2 years of experience, I’ve sharpened my skills in both frontend and backend development,
+                                With solid professional experience, I’ve sharpened my skills in both frontend and backend development,
                                     building dynamic, responsive, and user-focused websites.
                                     My portfolio showcases a wide range of work—from clean, classic HTML builds to creative animations using GSAP.</p>
                             <p className="grid-subtext g_fadeIn">My approach is always centered on the client’s goals.
