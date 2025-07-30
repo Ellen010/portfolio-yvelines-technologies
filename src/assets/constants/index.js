@@ -250,7 +250,8 @@ export const workExperiences = [
         title: "3Degrees Inc. is an innovative startup inspired to bring the difference in 3D modeling, inform more people about 3D modeling and share new models and concepts.",
         icon: '/assets/framer.svg',
         animation: 'victory',
-    },
+    }, 
+    
     {
         id: 2,
         name: 'NoPestsAllowed',
@@ -260,6 +261,7 @@ export const workExperiences = [
         icon: 'assets/project-logo3.png',
         animation: 'clapping',
     },
+    
     {
         id: 3,
         name: 'Telus',
