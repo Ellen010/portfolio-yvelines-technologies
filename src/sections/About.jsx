@@ -68,8 +68,28 @@ const About = () => {
                     <div id="aboutme">
                         <p className="grid-headtext g_fadeIn">Tech Stack</p>
                             <p className="grid-subtext g_fadeIn">
-                                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                                applications
+                                With solid professional experience in full-stack development, I’ve built responsive and user-centered applications by combining technical depth with creative frontend design. My projects span web and mobile environments, focusing on performance, maintainability, and user experience. Below is a breakdown of the technologies and tools I’ve mastered throughout my journey:
+                                <p className="grid-subtext g_fadeIn">
+                                    <span className="text-white">Frontend Development: </span>
+                                JavaScript (ES6+), TypeScript, Angular, React Native, Next.JS, Vue, Tailwind CSS, HTML5, CSS, GSAP, Vite, Expo, Framer Motion, Shadcn/ui, Aceternity UI
+                                I specialize in creating fluid, interactive interfaces and animations, optimizing performance while maintaining accessibility and visual impact.
+                                </p>
+                                <p className="grid-subtext g_fadeIn">
+                                <span className="text-white">Backend Development: </span>
+                                Node.JS (JavaScript), Nest.JS, Express, PHP, Python, Redis, SQL/NoSQL, PostgreSQL, MongoDB
+                                I develop secure, scalable APIs and services, with experience managing both relational and non-relational databases and integrating third-party services.
+                                </p>
+                                <p className="grid-subtext g_fadeIn">
+                                <span className="text-white">Tools & Methodologies: </span>
+                                Docker, Git, Redux, Sentry, GraphQL, Clean Code
+                                I follow best practices in version control, testing, and containerization. My development approach emphasizes clean, modular code and efficient debugging.
+                                </p>
+                                <p className="grid-subtext g_fadeIn">
+                                <span className="text-white">Soft Skills: </span>
+                                Teamwork, Problem Solving, Critical Thinking, Project Management
+                                Beyond coding, I excel in cross-functional collaboration, communicating technical ideas clearly, and managing project timelines effectively.
+                                </p>
+
                             </p>
                         </div>
                     </div>
