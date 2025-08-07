@@ -34,24 +34,10 @@ export const clientReviews = [
         id: 2,
         name: '3Degrees Inc',
         position: 'Owner',
-        img: 'assets/review2.png',
+        img: 'assets/project-logo3.png',
         review:
             'Yvelines Technologies helped our business to be present online and to attract more clients. Fast, efficient and top-notch service.',
-    },
-    {
-        id: 3,
-        name: 'More info is coming soon',
-        position: 'More info is coming soon',
-        img: 'assets/review2.png',
-        review:
-            'More info is coming soon',
-    },
-    {
-        name: 'More info is coming soon',
-        position: 'More info is coming soon',
-        img: 'assets/review2.png',
-        review:
-            'More info is coming soon', },
+    }
 ];
 
 export const myProjects = [
@@ -59,7 +45,10 @@ export const myProjects = [
         title: '3Degrees - 3D Modeling Platform',
         desc: '3Degrees is a personalised website that represents a 3D models for model inspiration and private orders. Website has a modern and secure frontend user interface using Next.JS and TailwindCSS, delivering a refined and optimized user experience.',
         subdesc:
-            'Designed custom animations and graphics using Three.js and GSAP, including scroll triggers, staggered effects, timelines, and a progress-tracking video slider.',
+            'Implemented a CI/CD pipeline to automate the testing and deployment of a Next.js and TailwindCSS-based frontend, ensuring smooth and secure delivery of features.\n' +
+            'Developed a responsive user interface with optimized performance and accessibility.\n' +
+            'Created custom animations with Three.js and GSAP, integrating scroll triggers, staggered effects, timelines, and an interactive video slider.\n' +
+            'Integrated Sentry for error monitoring and behavioral analytics, tracking loading times, click-through rates, and user engagement patterns to improve UX.',
         href: 'https://3degrees.vercel.app/',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
@@ -93,10 +82,16 @@ export const myProjects = [
         ],
     },
     {
-        title: 'Financial Instruments Explained.',
-        desc: 'Types and Asset Classes',
+        title: 'Financial Instruments Explained - Educational Web Timeline',
+        desc: 'Types and Asset Classes.History of Stock Exchanges. \n' +
+            ' "History of Stock Exchanges" is an interactive educational web page designed to showcase the global evolution of financial markets through a visually structured timeline.\n ' +
+            'The project provides an informative and accessible resource for users to explore key milestones in the development of stock exchanges from the 17th century to 2024.',
         subdesc:
-            'HTML nad CSS website that offers profound information reg   regarding financial instruments and its description.',
+            'Built with semantic HTML and custom CSS, the project emphasizes accessibility, clarity, and responsive design. ' +
+            'It features structured headings, lists, and multimedia elements—including an embedded historical image with captions—to support both visual and textual learning. The timeline is organized by century, guiding users through significant events such as the founding of the Amsterdam Stock Exchange, the rise of NASDAQ, and the emergence of AI-driven trading strategies.\n' +
+            '\n' +
+            'This static site highlights clean code architecture, effective use of HTML5 tags, and a strong understanding of content hierarchy.' +
+            ' It’s ideal for educational platforms, financial literacy courses, and historical reference portals. Future iterations may include JavaScript for enhanced interactivity or integration with real-time financial APIs.',
         href: 'https://financial-instruments-explained.vercel.app/',
         texture: '/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
@@ -130,11 +125,17 @@ export const myProjects = [
         ],
     },
     {
-        title: 'More info is coming soon',
-        desc: 'More info is coming soon',
+        title: 'NoPestsAllowed',
+        desc: 'NoPestsAllowed aim to provide worldwide application to centralize deposition about pests. Each deposition is verified by picture and user location. ' +
+            'The Picture is geolocalised in order to define the deposition location. The picture must be a visual proof showing pests or many depositions against a place.',
         subdesc:
-            'More info is coming soon',
-        href: 'More info is coming soon',
+            'Developed a full-stack SaaS platform to centralize and verify pest infestation reports in residential and public spaces.' +
+            'Built the frontend using Next.js, React Native, and Tailwind CSS. Designed a secure backend in Node.js, Express, and MongoDB, handling user authentication and real-time data management.\n' +
+            'Implemented AI-powered verification, using image recognition and geolocation to assess the accuracy of user-submitted reports.\n' +
+            'Integrated a deposition system, allowing users to submit reports with photos, descriptions, and geolocation metadata.\n' +
+            'Ensured smooth state management with Redux, improving data consistency and user experience.\n' +
+            'Developed a custom notification system, updating users on the status of their reports.',
+        href: 'https://github.com/NoPestsAllowed',
         texture: '/textures/project/project3.mp4',
         logo: '/assets/project-logo3.png',
         logoStyle: {
@@ -271,15 +272,16 @@ export const workExperiences = [
         pos: 'Software Developer- Full Stack ',
         duration: '2024',
         title: "NoPestsAllowed's aim is to provide worldwide application to centralize deposition about pests. Each deposition is verified by picture and user location. The Picture is geolocalised in order to define the deposition location. The picture must be a visual proof showing pests or many depositions against a place.",
-        icon: '/assets/figma.svg',
+        icon: 'assets/project-logo3.png',
         animation: 'clapping',
     },
     {
         id: 3,
         name: 'Telus',
         pos: 'Data Analyst',
+        duration: '',
         title: "Telus is an AI company that combines the power of human intelligence and high-quality data to design. It's goals to train and improve your AI models and applications.",
-        icon: '/assets/notion.svg',
+        icon: '/assets/project-logo001.png',
         animation: 'salute',
     },
 ];

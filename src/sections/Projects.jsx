@@ -117,9 +117,8 @@ const Projects = () => {
 
     return (
         <section className="c-space my-20">
-            <h3 className="head-text pb-2">My Selected Work</h3>
-            <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-                <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
+            <h3 className="head-text mb-5">My Selected Work</h3>
+                <div className="flex flex-col gap-5 relative sm:p-10 m-16 shadow-2xl shadow-black-200">
                     <div className="absolute top-0 right-0">
                         <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
                     </div>
@@ -164,56 +163,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="border border-black-300 bg-black-200 rounded-2xl h-96 md:h-full flex flex-wrap gap-6 justify-center items-center p-4">
-                    {[1, 2, 3, 4, 5].map((i) => {
-                        let fallbackImage = "";
-                        let activeImage = "";
 
-                        if (i === 5) {
-                            fallbackImage = "/assets/project-logo5.png";
-                            activeImage = "/assets/project-logo6.png";
-                        } else {
-                            if (i === 1 || i === 4) {
-                                fallbackImage = "/assets/project-logo2.png";
-                                activeImage = "/assets/project-logo4.png";
-                            } else if (i === 2 || i === 3) {
-                                fallbackImage = "/assets/project-logo3.png";
-                                activeImage = "/assets/project-logo1.png";
-                            }
-                        }
-
-                        return (
-                            <div
-                                key={i}
-                                className="relative bg-black-300 w-60 h-60 rounded-2xl overflow-hidden group"
-                                data-pixelated-image-reveal
-                            >
-                                {/* Pixel grid */}
-                                <div
-                                    className="absolute top-0 left-0 w-full h-full z-10"
-                                    data-pixelated-image-reveal-grid
-                                ></div>
-
-                                {/* Active image */}
-                                <img
-                                    src={activeImage}
-                                    alt={`project logo ${i}`}
-                                    className="absolute bg-black-300 top-0 left-0 w-full h-full object-cover"
-                                    data-pixelated-image-reveal-active
-                                    style={{ display: "none" }}
-                                />
-
-                                {/* Fallback image */}
-                                <img
-                                    src={fallbackImage}
-                                    alt={`project logo ${i}`}
-                                    className="w-full h-full object-cover opacity-50"
-                                />
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
 
         </section>
     );

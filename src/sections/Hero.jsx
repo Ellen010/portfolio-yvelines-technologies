@@ -54,7 +54,7 @@ const Hero = () => {
             </div>
 
             <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-                <a href="#about" className="w-fit">
+                <a href="#contact" className="w-fit">
                     <Button name="Let's work together" containerClass="sm:w-fit w-full sm:min-w-96 hover:bg-red-800 hover:text-white transition-all duration-300" />
                 </a>
             </div>
