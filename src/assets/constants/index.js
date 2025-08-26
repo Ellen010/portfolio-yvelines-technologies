@@ -34,7 +34,7 @@ export const clientReviews = [
         id: 2,
         name: '3Degrees Inc',
         position: 'Owner',
-        img: 'assets/project-logo3.png',
+        img: 'assets/project-logo1.png',
         review:
             'Yvelines Technologies helped our business to be present online and to attract more clients. Fast, efficient and top-notch service.',
     }
@@ -263,7 +263,7 @@ export const workExperiences = [
         pos: 'Software Developer',
         duration: '2024 - Present',
         title: "3Degrees Inc. is an innovative startup inspired to bring the difference in 3D modeling, inform more people about 3D modeling and share new models and concepts.",
-        icon: '/assets/framer.svg',
+        icon: 'assets/project-logo1.png',
         animation: 'victory',
     },
     {
