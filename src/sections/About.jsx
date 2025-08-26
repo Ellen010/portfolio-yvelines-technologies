@@ -12,21 +12,22 @@ const About = () => {
         gsap.from('#aboutme', {
             scrollTrigger: {
                 trigger: '#aboutme',
-                start: 'top 80%',
+                start: 'top 20%'
             },
             opacity: 0,
             scale: 2,
             duration: 2,
-            ease: 'expo.inOut'
+            ease: 'expo.inOut',
+            onComplete: () => {
+                gsap.to('#aboutme', {
+                    opacity: 0,
+                    duration: 4,
+                    delay: 3
+                })
+            }
         })
 
-        animateWithGsap('.g_fadeIn', {
-            opacity: 1,
-            y: 0,
-            duration: 2,
-            ease: 'expo.inOut',
-            delay: 0.9
-        })
+
     }, []);
 
     const handleCopy = () => {
@@ -41,10 +42,10 @@ const About = () => {
     return (
         <section className="c-space my-20" id="about">
             <h3 className="head-text pb-2 mb-5">About</h3>
-            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-fit">
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain rounded-lg mt-7" />
+                        <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain rounded-lg m-7" />
 
                         <div id="aboutme" >
                             <p className="grid-headtext g_fadeIn ">Hi, I’m Elena</p>
@@ -127,11 +128,11 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="xl:col-span-2 xl:row-span-3">
+                <div className="xl:col-span-1 xl:row-span-2">
                     <div className="grid-container">
                         <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
-                        <div>
+                        <div id="aboutme">
                             <p className="grid-headtext">My Passion for Coding</p>
                             <p className="grid-subtext">
                                 I love solving problems and building things through code. Programming isn&apos;t just my
@@ -152,13 +153,31 @@ const About = () => {
                             alt="grid-4"
                             className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
                         />
-
+                        <div id="aboutme">
                         <div className="space-y-2">
                             <p className="grid-subtext text-center">Contact me</p>
                             <div className="copy-container" onClick={handleCopy}>
                                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
                                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">yvelinestechnologies@gmail.com</p>
                             </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="xl:col-span-1 xl:row-span-2">
+                    <div className="grid-container">
+                        <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[166px] h-fit object-contain" />
+
+                        <div id="aboutme">
+                            <p className="grid-headtext">My Passion for Coding</p>
+                            <p className="grid-subtext">
+                                I love solving problems and building things through code. Programming isn&apos;t just my
+                                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                                The best part about technology, is there is always something new that appears tomorrow. The game never gets boring,
+                                thanks to the witty developer's mind that always create new code solutions. When they say that talent is build
+                                with days and days of efforts, code is sharpened by written lines that function.
+                                Throughout my develop journey I have wrote more than 1.5 million lines of code. And more and more repositories are to come.
+                            </p>
                         </div>
                     </div>
                 </div>
