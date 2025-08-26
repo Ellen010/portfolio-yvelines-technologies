@@ -12,19 +12,25 @@ const About = () => {
         gsap.from('#aboutme', {
             scrollTrigger: {
                 trigger: '#aboutme',
-                start: 'top 20%'
+                start: 'top 10%'
             },
-            opacity: 0,
-            scale: 2,
+            opacity: 1,
+            scale: 1.2,
             duration: 2,
+            ease: 'expoScale',
+        });
+
+        gsap.to('#aboutme', {
+            opacity: 0,
+            duration: 4,
+            delay: 19
+        });
+        animateWithGsap('.g_fadeIn', {
+            opacity: 1,
+            y: 0,
+            duration: 20,
             ease: 'expo.inOut',
-            onComplete: () => {
-                gsap.to('#aboutme', {
-                    opacity: 0,
-                    duration: 4,
-                    delay: 3
-                })
-            }
+            delay: 5.9
         })
 
 
@@ -132,9 +138,8 @@ const About = () => {
                     <div className="grid-container">
                         <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
-                        <div id="aboutme">
-                            <p className="grid-headtext">My Passion for Coding</p>
-                            <p className="grid-subtext">
+                            <p className="grid-headtext g_fadeIn">My Passion for Coding</p>
+                            <p className="grid-subtext g_fadeIn">
                                 I love solving problems and building things through code. Programming isn&apos;t just my
                                 profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
                                 The best part about technology, is there is always something new that appears tomorrow. The game never gets boring,
@@ -143,7 +148,6 @@ const About = () => {
                                 Throughout my develop journey I have wrote more than 1.5 million lines of code. And more and more repositories are to come.
                             </p>
                         </div>
-                    </div>
                 </div>
 
                 <div className="xl:col-span-1 xl:row-span-2">
@@ -161,23 +165,6 @@ const About = () => {
                                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">yvelinestechnologies@gmail.com</p>
                             </div>
                         </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="xl:col-span-1 xl:row-span-2">
-                    <div className="grid-container">
-                        <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[166px] h-fit object-contain" />
-
-                        <div id="aboutme">
-                            <p className="grid-headtext">My Passion for Coding</p>
-                            <p className="grid-subtext">
-                                I love solving problems and building things through code. Programming isn&apos;t just my
-                                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
-                                The best part about technology, is there is always something new that appears tomorrow. The game never gets boring,
-                                thanks to the witty developer's mind that always create new code solutions. When they say that talent is build
-                                with days and days of efforts, code is sharpened by written lines that function.
-                                Throughout my develop journey I have wrote more than 1.5 million lines of code. And more and more repositories are to come.
-                            </p>
                         </div>
                     </div>
                 </div>
