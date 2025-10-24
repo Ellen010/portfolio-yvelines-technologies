@@ -12,21 +12,28 @@ const About = () => {
         gsap.from('#aboutme', {
             scrollTrigger: {
                 trigger: '#aboutme',
-                start: 'top 80%',
+                start: 'top 10%'
             },
-            opacity: 0,
-            scale: 2,
+            opacity: 1,
+            scale: 1.2,
             duration: 2,
-            ease: 'expo.inOut'
-        })
+            ease: 'expoScale',
+        });
 
+        gsap.to('#aboutme', {
+            opacity: 0,
+            duration: 4,
+            delay: 19
+        });
         animateWithGsap('.g_fadeIn', {
             opacity: 1,
             y: 0,
-            duration: 2,
-            ease: 'expo.inOut',
-            delay: 0.9
+            duration: 20,
+            ease: 'circ.inOut',
+            delay: 5.9
         })
+
+
     }, []);
 
     const handleCopy = () => {
@@ -41,10 +48,10 @@ const About = () => {
     return (
         <section className="c-space my-20" id="about">
             <h3 className="head-text pb-2 mb-5">About</h3>
-            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-fit">
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain rounded-lg mt-7" />
+                        <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain rounded-lg m-7" />
 
                         <div id="aboutme" >
                             <p className="grid-headtext g_fadeIn ">Hi, I’m Elena</p>
@@ -126,12 +133,10 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className="xl:col-span-2 xl:row-span-3">
+                <div className="xl:col-span-1 xl:row-span-2">
                     <div className="grid-container">
                         <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
-                        <div>
                             <p className="grid-headtext">My Passion for Coding</p>
                             <p className="grid-subtext">
                                 I love solving problems and building things through code. Programming isn&apos;t just my
@@ -142,7 +147,6 @@ const About = () => {
                                 Throughout my develop journey I have wrote more than 1.5 million lines of code. And more and more repositories are to come.
                             </p>
                         </div>
-                    </div>
                 </div>
 
                 <div className="xl:col-span-1 xl:row-span-2">
@@ -152,7 +156,6 @@ const About = () => {
                             alt="grid-4"
                             className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
                         />
-
                         <div className="space-y-2">
                             <p className="grid-subtext text-center">Contact me</p>
                             <div className="copy-container" onClick={handleCopy}>

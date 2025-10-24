@@ -34,7 +34,7 @@ export const clientReviews = [
         id: 2,
         name: '3Degrees Inc',
         position: 'Owner',
-        img: 'assets/project-logo3.png',
+        img: 'assets/project-logo1.png',
         review:
             'Yvelines Technologies helped our business to be present online and to attract more clients. Fast, efficient and top-notch service.',
     }
@@ -126,9 +126,10 @@ export const myProjects = [
     },
     {
         title: 'NoPestsAllowed',
-        desc: 'NoPestsAllowed aim to provide worldwide application to centralize deposition about pests. Each deposition is verified by picture and user location. ' +
-            'The Picture is geolocalised in order to define the deposition location. The picture must be a visual proof showing pests or many depositions against a place.',
-        subdesc:
+        desc: 'NoPestsAllowed aim to provide nationwide application to centralize depositions about pests. Each deposition/report is verified by picture and user location that is checked by unique AI algorithm.\n' +
+            'User picture is processed and geolocalised in order to define the deposition location. Submitted photos and reports must be a visual proof showing pests or many depositions against a place.\n'+
+            'Property tenants and owners have their personalised spaces and all the data from both sides is exceptionally protected by secure algorithm. ',
+            subdesc:
             'Developed a full-stack SaaS platform to centralize and verify pest infestation reports in residential and public spaces.' +
             'Built the frontend using Next.js, React Native, and Tailwind CSS. Designed a secure backend in Node.js, Express, and MongoDB, handling user authentication and real-time data management.\n' +
             'Implemented AI-powered verification, using image recognition and geolocation to assess the accuracy of user-submitted reports.\n' +
@@ -170,11 +171,19 @@ export const myProjects = [
         ],
     },
     {
-        title: 'More info is coming soon',
-        desc: 'More info is coming soon',
-        subdesc:
-            'More info is coming soon',
-        href: 'More info is coming soon',
+        title: 'ÉlanFinance Conseil',
+        desc: 'This prohect represents a Consulting Company website.\n'+
+               'ÉlanFinance Conseil is a financial consulting firm specializing in outsourced management control, financial reporting, budget forecasting, and strategic support.\n'+
+                'It primarily serves French small and medium-sized enterprises (SMEs) that want to benefit from expert financial management without hiring a full-time management controller.',
+            subdesc:
+            'Unique 3D website starts with synematic hero section with synchronized video backgrounds, interactive photorealistic visual images, continues with parallax masked video rendering, that feels alive.\n' +
+            'It is built with React, Three.js, GSAP, and TailwindCSS.\n'+
+            'Landing page includes scroll trigger effects giving precise control over the animations and timelines,\n'+
+            'advanced scroll storytelling that guides users through a emotional journey.\n'+
+            'It show ÉlanFinance Conseil and its services in immersive 3D scenes, scroll-animated models, and pinned sections.\n'+
+            'Featuring responsive design, smooth timeline animations, and visually striking image transitions—perfect for creating interactive, modern web experiences.',
+
+        href: 'https://elanfinance-conseil.vercel.app/',
         texture: '/textures/project/project4.mp4',
         logo: '/assets/project-logo4.png',
         logoStyle: {
@@ -201,17 +210,24 @@ export const myProjects = [
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Three.js',
+                path: '/assets/threejs.png',
+            },
+            {
+                id: 5,
+                name: 'GSAP',
+                path: '/assets/gsap.jpg',
             },
         ],
     },
     {
-        title: 'More info is coming soon',
-        desc: 'More info is coming soon',
+        title: 'Halo-Mama',
+        desc: 'This project represents a online platform for a pregnancy pillow.\n'+
+        'This website offers the ultimate pregnancy pillow designed by a company creator, who got her inspiration during her pregnancy.\n'+
+            'Unique design is adapted to the most challenging moments of the female experience and allows women to lay down on their stomach thanks ot the shape of this product',
         subdesc:
-            'More info is coming soon',
-        href: 'More info is coming soon',
+            'Landing page was coded with React and several tools, as: Better-auth, Next.js, PostgreSQL, Typescript, Zustand, Drizzle, TailwindSCC and Devin.',
+        href: 'https://halo-mama.vercel.app/',
         texture: '/textures/project/project5.mp4',
         logo: '/assets/project-logo5.png',
         logoStyle: {
@@ -228,18 +244,43 @@ export const myProjects = [
             },
             {
                 id: 2,
+                name: 'Next.js',
+                path: 'assets/nextjs.png',
+            },
+            {
+                id: 3,
                 name: 'TailwindCSS',
                 path: 'assets/tailwindcss.png',
             },
             {
-                id: 3,
+                id: 4,
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
             {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                id: 5,
+                name: 'Better-Auth',
+                path: '/assets/betterauth.png',
+            },
+            {
+                id: 6,
+                name: 'PostgreSQL',
+                path: '/assets/postgresql.png',
+            },
+            {
+                id: 7,
+                name: 'Zustand',
+                path: '/assets/zustand.svg',
+            },
+            {
+                id: 8,
+                name: 'Drizzle',
+                path: '/assets/drizzle.png',
+            },
+            {
+                id: 10,
+                name: 'Devin',
+                path: '/assets/devin.png',
             },
         ],
     },
@@ -263,7 +304,7 @@ export const workExperiences = [
         pos: 'Software Developer',
         duration: '2024 - Present',
         title: "3Degrees Inc. is an innovative startup inspired to bring the difference in 3D modeling, inform more people about 3D modeling and share new models and concepts.",
-        icon: '/assets/framer.svg',
+        icon: 'assets/project-logo1.png',
         animation: 'victory',
     },
     {
