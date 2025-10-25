@@ -218,6 +218,11 @@ export const myProjects = [
                 name: 'GSAP',
                 path: '/assets/gsap.jpg',
             },
+            {
+                id: 6,
+                name: 'Zustand',
+                path: '/assets/zustand.svg',
+            },
         ],
     },
     {
