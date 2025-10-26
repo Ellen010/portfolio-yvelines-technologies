@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <p className="text-white-500">© 2025 Elena Welty. All rights reserved.</p>
+            <p className="text-white-500">© 2025 Yvelines Technologies. All rights reserved.</p>
         </footer>
     );
 };

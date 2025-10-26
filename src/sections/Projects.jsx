@@ -25,7 +25,7 @@ const Projects = () => {
     };
 
     useGSAP(() => {
-        gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
+        gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 1, ease: 'power2.inOut' });
     }, [selectedProjectIndex]);
 
     const currentProject = myProjects[selectedProjectIndex];
