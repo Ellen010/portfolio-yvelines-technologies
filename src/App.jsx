@@ -10,6 +10,10 @@ import Contact from './sections/Contact.jsx'
 import Clients from './sections/Clients.jsx'
 import Projects from './sections/Projects.jsx'
 import WorkExperience from './sections/Experience.jsx'
+import gsap from 'gsap';
+import {ScrollTrigger, SplitText} from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
 
