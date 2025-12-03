@@ -1,8 +1,9 @@
+import React from 'react'
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-
 import useAlert from '../hooks/useAlert.js';
 import Alert from '../components/Alert.jsx';
+
 
 const Contact = () => {
     const formRef = useRef();
@@ -49,7 +50,7 @@ const Contact = () => {
                             email: '',
                             message: '',
                         });
-                    }, [3000]);
+                    }, [6000]);
                 },
                 (error) => {
                     setLoading(false);
@@ -78,6 +79,7 @@ const Contact = () => {
                         life, I’m here to help.
                     </p>
 
+                    {alert.show && <Alert {...alert} />}
                     <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
                         <label className="space-y-3">
                             <span className="field-label">Full Name</span>

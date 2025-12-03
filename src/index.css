@@ -208,3 +208,7 @@ body {
 .pixelated-image-card__pixel {
     @apply absolute bg-gray-200;
 }
+
+.alert-p {
+     @apply text-xl underline text-white my-4;
+}
