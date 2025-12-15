@@ -25,13 +25,13 @@ const About = () => {
         <section className="c-space my-20" id="about">
             <h3 className="head-text pb-2 mb-5">About</h3>
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full project-desc">
-                <div className="col-span-1 xl:row-span-3">
-                    <div className="grid-container">
+                <div className="col-span-1 xl:row-span-3 xl:row-start-1">
+                <div className="grid-container">
                         <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain rounded-lg mt-7" />
 
-                        <div id="project-desc" >
+                        <div>
                             <p className="animatedText">Hi, I’m Elena</p>
-                            <p className="animatedText"> <span className="text-white-500">  </span>
+                            <p className="animatedText project-desc"> <span className="text-white-500">  </span>
                                 With solid professional experience, I’ve sharpened my skills in both frontend and backend development,
                                     building dynamic, responsive, and user-focused websites.
                                     My portfolio showcases a wide range of work—from clean, classic HTML builds to creative animations using GSAP.</p>
@@ -45,7 +45,7 @@ const About = () => {
                     </div>
                 </div>
 
-            <div className="col-span-1 xl:row-span-3 project-desc">
+                <div className="col-span-1 xl:row-span-3 xl:row-start-1">
                 <div className="grid-container">
                     <img src="assets/grid2.png" alt="grid-2" className="w-full h-[300px] sm:h-[400px] object-contain pt-12" />
 
@@ -80,7 +80,7 @@ const About = () => {
                     </div>
                 </div>
 
-            <div className="col-span-1 xl:row-span-4">
+                <div className="col-span-1 xl:row-span-3 xl:row-start-1">
                 <div className="grid-container">
                     <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center pt-12">
                         <Globe
@@ -95,9 +95,9 @@ const About = () => {
                             labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
                         />
                     </div>
-                    <div className="project-desc">
+                    <div>
                             <p className="animatedText">Flexibility</p>
-                            <p className="animatedText">No matter where you are located, we gonna make it work.
+                            <p className="animatedText project-desc">No matter where you are located, we gonna make it work.
                                 My objective is to create the ultimate product that corresponds to your ambitions and goals.
                                 I’m very flexible with time zone communications & locations.
                                 Communication is performed via video calls, emails and personal online space created for each project.
@@ -105,7 +105,7 @@ const About = () => {
                                 unsure about the project progress. Keeping the client informed and updated via the personal online space is my priority.
                                 I&apos;m based in Paris, France and most of my projects are done remotely.
                                 For local clients in-face meetings are available.</p>
-                            <Button name="Contact Me" containerClass="w-full m-12 hover:bg-red-800 hover:text-white transition-all duration-300" />
+                            <Button name="Contact Me" containerClass="w-full hover:bg-red-800 mt-10  hover:text-white transition-all duration-300" />
                         </div>
                     </div>
                 </div>

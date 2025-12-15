@@ -29,7 +29,7 @@ const Hero = () => {
                 </p>
             </div>
 
-            <div className="w-full h-full absolute inset-0 p-16">
+            <div className="w-full h-full absolute inset-0 p-16 pb-36">
                 <Canvas className="w-full h-full">
                     <Suspense fallback={<CanvasLoader />}>
                         {/* To hide controller */}

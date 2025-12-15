@@ -41,6 +41,24 @@ body {
     .text-gray_gradient {
         @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
     }
+    .logo-shadow::after {
+        content: "";
+        position: absolute;
+        bottom: 12px; /* distance under logo */
+        width: 70%;
+        height: 18px;
+        background: radial-gradient(
+                ellipse at center,
+                rgba(153, 27, 27, 0.65) 0%,
+                rgba(180, 60, 60, 0.45) 18%,
+                rgba(220, 220, 220, 0.35) 40%,
+                rgba(120, 120, 120, 0.15) 60%,
+                rgba(0, 0, 0, 0) 72%
+        );
+        filter: blur(4px);
+        transform: translateY(100%);
+        z-index: 0;
+    }
 
     /* button component */
     .btn {
@@ -91,7 +109,7 @@ body {
     }
 
     .project-desc {
-        @apply gap-5 text-white-600 mt-5 mb-10
+        @apply gap-5 text-white-600 mt-5 mb-10 space-y-4
     }
 
     /* clients section */
@@ -210,5 +228,5 @@ body {
 }
 
 .alert-p {
-     @apply text-xl underline text-white my-4;
+    @apply text-xl underline text-white my-4;
 }
