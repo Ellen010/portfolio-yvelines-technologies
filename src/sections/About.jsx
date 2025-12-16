@@ -105,7 +105,9 @@ const About = () => {
                                 unsure about the project progress. Keeping the client informed and updated via the personal online space is my priority.
                                 I&apos;m based in Paris, France and most of my projects are done remotely.
                                 For local clients in-face meetings are available.</p>
-                            <Button name="Contact Me" containerClass="w-full hover:bg-red-800 mt-10  hover:text-white transition-all duration-300" />
+                        <div className="pt-10">
+                            <Button name="Contact Me" containerClass="w-full hover:bg-red-800 mt-10 hover:text-white transition-all duration-300" />
+                        </div>
                         </div>
                     </div>
                 </div>
