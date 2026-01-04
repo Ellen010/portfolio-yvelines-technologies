@@ -4,10 +4,9 @@ import { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Center, OrbitControls } from '@react-three/drei';
 import { useEffect } from 'react';
-
 import { myProjects } from '../assets/constants/index.js';
 import CanvasLoader from '../components/Loading.jsx';
-
+import logoImg from "/public/logo.png";
 
 const projectCount = myProjects.length;
 
@@ -23,6 +22,23 @@ const Projects = () => {
             }
         });
     };
+    useGSAP(() => {
+        const halfmxX = window.innerWidth/2
+        gsap.fromTo("#roll", {
+            x: 0,
+            rotation: 0,
+            borderRadius: "0%",
+        },
+            {
+                x: halfmxX,
+                repeat: -1,
+                yoyo: true,
+                rotation: 360,
+                borderRadius: "100%",
+                duration: 2,
+                ease: "bounce.Out",
+            });
+    }, []);
 
     useGSAP(() => {
         gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 1, ease: 'power2.inOut' });
@@ -118,50 +134,60 @@ const Projects = () => {
     return (
         <section className="c-space my-20">
             <h3 className="head-text mb-5">My Selected Work</h3>
-                <div className="flex flex-col gap-5 relative sm:p-10 m-16 shadow-2xl shadow-black-200">
-                    <div className="absolute top-0 right-0">
-                        <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
+            <div className="flex flex-col gap-5 relative sm:p-10 m-16 shadow-2xl shadow-black-200">
+                <div className="absolute top-0 right-0">
+                    <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
+                </div>
+
+                <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit bg-blue-200/30 rounded-2xl transition-transform duration-500 hover:rotate-[180deg]" style={currentProject.logoStyle}>
+                    <img className="w-40 h-40 shadow-sm" src={currentProject.logo} alt="logo" />
+                </div>
+                <div className="flex flex-col gap-5 text-white-600 my-5">
+                    <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
+
+                    <p className="animatedText">{currentProject.desc}</p>
+                    <p className="animatedText">{currentProject.subdesc}</p>
+                </div>
+
+                <div className="flex items-center justify-between flex-wrap gap-5 pt-10">
+                    <div className="flex items-center gap-3">
+                        {currentProject.tags.map((tag, index) => (
+                            <div key={index} className="tech-logo">
+                                <img src={tag.path} alt={tag.name} />
+                            </div>
+                        ))}
                     </div>
 
-                    <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit bg-blue-200/30 rounded-2xl transition-transform duration-500 hover:rotate-[180deg]" style={currentProject.logoStyle}>
-                        <img className="w-40 h-40 shadow-sm" src={currentProject.logo} alt="logo" />
-                    </div>
-                    <div className="flex flex-col gap-5 text-white-600 my-5">
-                        <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
+                    <a
+                        className="flex items-center gap-2 cursor-pointer text-white-600"
+                        href={currentProject.href}
+                        target="_blank"
+                        rel="noreferrer">
+                        <p>Check Live Site</p>
+                        <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+                    </a>
+                </div>
 
-                        <p className="animatedText">{currentProject.desc}</p>
-                        <p className="animatedText">{currentProject.subdesc}</p>
-                    </div>
+                <div className="flex justify-between items-center mt-7">
+                    <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
+                        <img src="/assets/left-arrow.png" alt="left arrow" />
+                    </button>
 
-                    <div className="flex items-center justify-between flex-wrap gap-5">
-                        <div className="flex items-center gap-3">
-                            {currentProject.tags.map((tag, index) => (
-                                <div key={index} className="tech-logo">
-                                    <img src={tag.path} alt={tag.name} />
-                                </div>
-                            ))}
-                        </div>
+                    <button className="arrow-btn" onClick={() => handleNavigation('next')}>
+                        <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
+                    </button>
+                </div>
+                <div className="relative h-40 overflow-hidden mt-20 mb-20">
+                    <div id="roll" className="absolute left-0 top-0">
 
-                        <a
-                            className="flex items-center gap-2 cursor-pointer text-white-600"
-                            href={currentProject.href}
-                            target="_blank"
-                            rel="noreferrer">
-                            <p>Check Live Site</p>
-                            <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-                        </a>
-                    </div>
-
-                    <div className="flex justify-between items-center mt-7">
-                        <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
-                            <img src="/assets/left-arrow.png" alt="left arrow" />
-                        </button>
-
-                        <button className="arrow-btn" onClick={() => handleNavigation('next')}>
-                            <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
-                        </button>
+                    <img
+                        src={logoImg}
+                        alt="Animated Company Logo"
+                        className="w-32 h-32 rounded-lg"
+                    />
                     </div>
                 </div>
+            </div>
 
 
 
