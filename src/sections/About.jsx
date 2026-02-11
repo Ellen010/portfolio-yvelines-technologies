@@ -27,7 +27,7 @@ const About = () => {
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full project-desc">
                 <div className="col-span-1 xl:row-span-3 xl:row-start-1">
                 <div className="grid-container">
-                        <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain rounded-lg mt-7" />
+                        <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[250px] h-fit object-contain rounded-lg mt-10" />
 
                         <div>
                             <p className="animatedText">Hi, I’m Elena</p>
@@ -47,9 +47,9 @@ const About = () => {
 
                 <div className="col-span-1 xl:row-span-3 xl:row-start-1">
                 <div className="grid-container">
-                    <img src="assets/grid2.png" alt="grid-2" className="w-full h-[300px] sm:h-[400px] object-contain pt-12" />
+                    <img src="assets/grid2.png" alt="grid-2" className="w-full h-[300px] sm:h-[400px] object-contain" />
 
-                    <div className="project-desc">
+                    <div className="project-desc pb-10">
                         <p className="animatedText">Tech Stack</p>
                             <p className="animatedText">
                                 With solid professional experience in full-stack development, I’ve built responsive and user-centered applications by combining technical depth with creative frontend design. My projects span web and mobile environments, focusing on performance, maintainability, and user experience. Below is a breakdown of the technologies and tools I’ve mastered throughout my journey:
@@ -105,7 +105,9 @@ const About = () => {
                                 unsure about the project progress. Keeping the client informed and updated via the personal online space is my priority.
                                 I&apos;m based in Paris, France and most of my projects are done remotely.
                                 For local clients in-face meetings are available.</p>
-                            <Button name="Contact Me" containerClass="w-full hover:bg-red-800 mt-10  hover:text-white transition-all duration-300" />
+                        <div className="pt-10">
+                            <Button name="Contact Me" containerClass="w-full hover:bg-red-800 hover:text-white transition-all duration-300" />
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +142,7 @@ const About = () => {
                             <p className="grid-subtext text-center">Contact me</p>
                             <div className="copy-container" onClick={handleCopy}>
                                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">yvelinestechnologies@gmail.com</p>
+                                <p className="lg:text-xl md:text-xl font-medium text-gray_gradient text-white">yvelinestechnologies@gmail.com</p>
                             </div>
                         </div>
                     </div>
