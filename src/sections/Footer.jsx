@@ -1,13 +1,13 @@
 const Footer = () => {
     return (
         <footer className="c-space pt-32 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5">
-            <div className="text-white-500 flex gap-2">
+            <div className="text-white-500 flex gap-2 mt-5">
                 <p>Terms & Conditions</p>
                 <p>|</p>
                 <p>Privacy Policy</p>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex gap-3 mt-5">
                 <div className="social-icon">
                     <a href="https://github.com/Ellen010" target="_blank" rel="noopener noreferrer">
                     <img src="/assets/github.svg" alt="github" className="w-5/6 h-5/6" />
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <p className="text-white-500">© 2025 Yvelines Technologies. All rights reserved.</p>
+            <p className="text-white-500 mt-5">© 2025 Yvelines Technologies. All rights reserved.</p>
         </footer>
     );
 };

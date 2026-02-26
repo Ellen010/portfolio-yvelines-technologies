@@ -41,7 +41,7 @@ const Projects = () => {
     }, []);
 
     useGSAP(() => {
-        gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 1, ease: 'power2.inOut' });
+        gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 0.5, stagger: 0.15, ease: 'power2.inOut' });
     }, [selectedProjectIndex]);
 
     const currentProject = myProjects[selectedProjectIndex];
@@ -177,14 +177,9 @@ const Projects = () => {
                         <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
                     </button>
                 </div>
-                <div className="relative h-40 overflow-hidden mt-20 mb-20">
-                    <div id="roll" className="absolute left-0 top-0">
-
-                    <img
-                        src={logoImg}
-                        alt="Animated Company Logo"
-                        className="w-32 h-32 rounded-lg"
-                    />
+                <div className="relative h-40 overflow-visible mt-20 mb-20 pt-10 pb-10">
+                    <div id="roll" className="absolute">
+                        <img src={logoImg} alt="Animated Company Logo" className="w-32 h-32 rounded-lg"/>
                     </div>
                 </div>
             </div>

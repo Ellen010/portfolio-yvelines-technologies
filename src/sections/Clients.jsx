@@ -3,7 +3,7 @@ import { clientReviews } from '../assets/constants/index.js';
 const Clients = () => {
     return (
         <section className="c-space my-20">
-            <h3 className="head-text mb-5">Hear from My Clients</h3>
+            <h3 className="head-text mb-5">Recommendations</h3>
 
             <div className="client-container">
                 {clientReviews.map((item) => (
@@ -19,6 +19,14 @@ const Clients = () => {
                                         <p className="text-white-500 md:text-base text-sm font-light">{item.position}</p>
                                     </div>
                                 </div>
+                                <a
+                                    className="flex items-center gap-2 cursor-pointer text-white-600"
+                                    href={item.href}
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    <p>LinkedIn Page</p>
+                                    <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+                                </a>
 
                                 <div className="flex self-end items-center gap-2">
                                     {Array.from({ length: 5 }).map((_, index) => (

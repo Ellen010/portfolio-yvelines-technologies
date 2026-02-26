@@ -21,26 +21,63 @@ export const navLinks = [
     },
 ];
 
-export const clientReviews = [
-    {
-        id: 1,
-        name: 'Anna Simon',
-        position: 'Director at Annas Business Consulting',
-        img: 'assets/review1.jpg',
-        review:
-            'Working with Yvelines Technologies was a fantastic experience. My old website was transformed into a modern, user-friendly platform. Attention to details and commitment to quality during this project was unmatched. I highly recommend this company for any web dev projects.',
-    },
-    {
-        id: 2,
-        name: '3Degrees Inc',
-        position: 'Owner',
-        img: 'assets/project-logo3.png',
-        review:
-            'Yvelines Technologies helped our business to be present online and to attract more clients. Fast, efficient and top-notch service.',
-    }
-];
-
 export const myProjects = [
+    {
+        title: 'VNB-IT',
+        desc: 'VNB-IT is an IT services company founded in 2022, specializing in supporting businesses with comprehensive technological solutions tailored to their needs. The company offers IT services including IT maintenance, system installation and configuration, network and security solutions, as well as video surveillance solutions.',
+        subdesc:
+            'Developed high-performance, responsive React.js applications, translating Figma designs into intuitive interfaces and improving page load time by 30%.\n' +
+            'Collaborated with designers and backend teams to integrate APIs, optimize rendering, and ensure smooth cross-browser functionality, reducing UI-related issues by 15%.\n' +
+            'Wrote tests, debugged and refactored code, contributing to Agile sprints and cutting frontend bugs nearly in half while improving code maintainability.\n',
+        href: 'https://vnb-it.fr/',
+        texture: '/textures/project/project1.mp4',
+        logo: '/assets/project-logo-vnb.jpg',
+        logoStyle: {
+            backgroundColor: '#2A1816',
+            border: '0.2px solid #36201D',
+            boxShadow: '0px 0px 60px 0px #AA3C304D',
+        },
+        spotlight: '/assets/spotlight1.png',
+        tags: [
+            {
+                id: 1,
+                name: 'React.js',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'Next.js',
+                path: 'assets/nextjs.png',
+            },
+            {
+                id: 3,
+                name: 'TailwindCSS',
+                path: 'assets/tailwindcss.png',
+            },
+            {
+                id: 4,
+                name: 'TypeScript',
+                path: '/assets/typescript.png',
+            },
+            {
+                id: 5,
+                name: 'Framer Motion',
+                path: '/assets/framer.png',
+            },
+            {
+                id: 6,
+                name: 'Figma',
+                path: '/assets/figma.svg',
+            },
+            ,
+            {
+                id: 7,
+                name: 'Webstorm',
+                path: '/assets/webstorm.png',
+            },
+
+        ],
+    },
     {
         title: '3Degrees - 3D Modeling Platform',
         desc: '3Degrees is a personalised website that represents a 3D models for model inspiration and private orders. Website has a modern and secure frontend user interface using Next.JS and TailwindCSS, delivering a refined and optimized user experience.',
@@ -66,18 +103,28 @@ export const myProjects = [
             },
             {
                 id: 2,
+                name: 'Next.js',
+                path: 'assets/nextjs.png',
+            },
+            {
+                id: 3,
                 name: 'TailwindCSS',
                 path: 'assets/tailwindcss.png',
             },
             {
-                id: 3,
+                id: 4,
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
             {
-                id: 4,
+                id: 5,
                 name: 'Framer Motion',
                 path: '/assets/framer.png',
+            },
+            {
+                id: 6,
+                name: 'Visual Studio',
+                path: '/assets/visual-studio.png',
             },
         ],
     },
@@ -114,13 +161,13 @@ export const myProjects = [
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'Visual Studio',
+                path: '/assets/visual-studio.png',
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Vercel',
+                path: '/assets/vercel.png',
             },
         ],
     },
@@ -167,6 +214,11 @@ export const myProjects = [
                 id: 4,
                 name: 'Framer Motion',
                 path: '/assets/framer.png',
+            },
+            {
+                id: 5,
+                name: 'Visual Studio',
+                path: '/assets/visual-studio.png',
             },
         ],
     },
@@ -217,6 +269,11 @@ export const myProjects = [
                 id: 5,
                 name: 'GSAP',
                 path: '/assets/gsap.jpg',
+            },
+            {
+                id: 6,
+                name: 'Webstorm',
+                path: '/assets/webstorm.png',
             },
         ],
     },
@@ -282,8 +339,45 @@ export const myProjects = [
                 name: 'Devin',
                 path: '/assets/devin.png',
             },
+            {
+                id: 11,
+                name: 'Webstorm',
+                path: '/assets/webstorm.png',
+            },
         ],
     },
+];
+
+export const clientReviews = [
+    {
+        id: 1,
+        name: 'Anna Simon',
+        position: 'Director of Halo Mama',
+        img: 'assets/review1.jpg',
+        review:
+            'Working with Yvelines Technologies was a fantastic experience. My old website was transformed into a modern, user-friendly platform. Attention to details and commitment to quality during this project was unmatched. I highly recommend this company for any web dev projects.',
+        href: 'https://www.linkedin.com/in/anna-simon-g/',
+
+    },
+    {
+        id: 2,
+        name: 'Yassine Maati',
+        position: 'Colleague, Full Stack WebDev',
+        img: 'assets/review2.jpg',
+        review:
+            'I had the pleasure of working with Elena Welty, and got to witness her professionalism and high quality work. \n' +
+            'She is a great communicator keeping her responses detailed and informative, and the team aligned. In addition, her Code practice is clean, modern, and readable, allowing me to start contributing immediately, she is a true asset in any team.',
+        href: 'https://www.linkedin.com/in/yassine-maati/',
+    },
+    {
+        id: 3,
+        name: '3Degrees Inc',
+        position: 'Owner',
+        img: 'assets/project-logo1.png',
+        review:
+            'Yvelines Technologies helped our business to be present online and to attract more clients. Fast, efficient and top-notch service.',
+        href: 'https://3degrees.vercel.app/',
+    }
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -300,9 +394,18 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
     {
         id: 1,
+        name: 'VNB-IT',
+        pos: 'Front-End Developer',
+        duration: '2025 - Present',
+        title: "VNB-IT delivers a wide range of IT services aimed at helping businesses build and manage their technology infrastructure. The company specializes in IT maintenance, system deployment and configuration, networking and security, and video surveillance systems.",
+        icon: 'assets/project-logo-vnb.png',
+        animation: 'victory',
+    },
+    {
+        id: 2,
         name: '3Degrees Inc',
         pos: 'Software Developer',
-        duration: '2024 - Present',
+        duration: '2024 - 2025',
         title: "3Degrees Inc. is an innovative startup inspired to bring the difference in 3D modeling, inform more people about 3D modeling and share new models and concepts.",
         icon: 'assets/project-logo1.png',
         animation: 'victory',
@@ -316,13 +419,13 @@ export const workExperiences = [
         icon: 'assets/project-logo3.png',
         animation: 'clapping',
     },
-    {
-        id: 3,
-        name: 'Telus',
-        pos: 'Data Analyst',
-        duration: '',
-        title: "Telus is an AI company that combines the power of human intelligence and high-quality data to design. It's goals to train and improve your AI models and applications.",
-        icon: '/assets/project-logo001.png',
-        animation: 'salute',
-    },
+   // {
+       // id: 3,
+       // name: 'Telus',
+      //  pos: 'Data Analyst',
+      //  duration: '2023',
+      //  title: "Telus is an AI company that combines the power of human intelligence and high-quality data to design. It's goals to train and improve your AI models and applications.",
+      //  icon: '/assets/project-logo001.png',
+      //  animation: 'salute',
+    //},
 ];

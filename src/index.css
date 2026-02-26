@@ -80,7 +80,7 @@ body {
 
     /* about section */
     .grid-container {
-        @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+        @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col;
     }
 
     .grid-headtext {
@@ -92,7 +92,7 @@ body {
     }
 
     .g_fadeIn {
-        @apply opacity-0 translate-y-[100px]
+        @apply opacity-0 translate-y-[30px]
     }
 
     .copy-container {
@@ -105,7 +105,7 @@ body {
     }
 
     .tech-logo {
-        @apply w-10 h-10 rounded-md p-2 bg-neutral-100 bg-opacity-10 backdrop-filter backdrop-blur-lg flex justify-center items-center;
+        @apply w-10 h-10 rounded-md p-2 bg-neutral-100 bg-opacity-10 backdrop-filter flex justify-center items-center;
     }
 
     .project-desc {
@@ -152,7 +152,7 @@ body {
 
     /* contact section */
     .contact-container {
-        @apply max-w-xl relative z-10 sm:px-10 px-5 mt-12;
+        @apply max-w-xl relative z-10 sm:px-5 px-3 mt-12;
     }
 
     .field-label {
