@@ -93,7 +93,6 @@ This portfolio serves as a professional platform to highlight my **technical exp
 <p align="center">
 <img width="1887" height="934" alt="Screenshot 2025-10-24 162141" src="https://github.com/user-attachments/assets/19edc7ca-752a-4c44-8c03-7f64a90186f7" />
 </p>
----
 
 ## ▶️ Getting Started
 
