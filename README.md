@@ -80,17 +80,19 @@ This portfolio serves as a professional platform to highlight my **technical exp
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://github.com/Ellen010/portfolio-yvelines-technologies/assets/0/homepage.png" width="90%" alt="Homepage" />
+ <img width="1445" height="912" alt="Screenshot 2025-10-24 162030" src="https://github.com/user-attachments/assets/87dd7b0a-095b-475b-9db6-ae2d8cb03a04" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/Ellen010/portfolio-yvelines-technologies/assets/0/projects.png" width="90%" alt="Projects section" />
+  <img width="1891" height="921" alt="Screenshot 2025-10-24 162053" src="https://github.com/user-attachments/assets/fe6dbc2c-4752-41c1-a17f-daea0c601142" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/Ellen010/portfolio-yvelines-technologies/assets/0/contact.png" width="90%" alt="Contact form" />
+<img width="1893" height="830" alt="Screenshot 2025-10-24 162124" src="https://github.com/user-attachments/assets/5bb3c3be-7342-4ba9-a35b-0d87eb090d54" />
 </p>
-
+<p align="center">
+<img width="1887" height="934" alt="Screenshot 2025-10-24 162141" src="https://github.com/user-attachments/assets/19edc7ca-752a-4c44-8c03-7f64a90186f7" />
+</p>
 ---
 
 ## ▶️ Getting Started
