@@ -1,7 +1,7 @@
 <div align="center">
 
 <h1 align="center">
-  <img src="https://github.com/user-attachments/assets/c52ba51a-3119-4e82-9d86-f74bfd44efcf" alt="Portfolio logo" width="35" height="35" style="vertical-align: middle; margin-right: 8px;"/>
+  <img src="https://github.com/user-attachments/assets/c52ba51a-3119-4e82-9d86-f74bfd44efcf" alt="Portfolio logo" width="50" height="50" style="vertical-align: middle; margin-right: 8px;"/>
   Yvelines Technologies — Personal Portfolio
 </h1>
 
