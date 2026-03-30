@@ -146,15 +146,44 @@ const About = () => {
                     />
 
                     <div className="space-y-3 pt-5">
-                        <p className="animatedText text-xl font-semibold text-white">
-                            My Passion for Coding
-                        </p>
+                        <p className="animatedText text-xl font-semibold text-white">Services</p>
+                            <p className="animatedText project-desc">
+                            </p>
+                            Full-stack web and mobile application development (React, Next.js, Node.js, React Native)
+                            <p className="animatedText project-desc">
+                                Design and development of scalable SaaS platforms
+                            </p>
+                            <p className="animatedText project-desc">
+                                Frontend development with responsive, high-performance UI/UX (Tailwind, animations, modern frameworks)
+                            </p>
+                            <p className="animatedText project-desc">
+                                Backend architecture, API development (REST & GraphQL), and database design (SQL/NoSQL)
+                            </p>
+                            <p className="animatedText project-desc">
+                                AI integration (LLMs, automation workflows, intelligent features)
+                            </p>
+                            <p className="animatedText project-desc">
+                                Cloud deployment and DevOps (CI/CD pipelines, Docker, serverless architecture)
+                            </p>
+                            <p className="animatedText project-desc">
+                                Performance optimization and code refactoring
+                            </p>
+                            <p className="animatedText project-desc">
+                                QA testing and technical audits (bug detection, UX issues, cross-browser testing)
+                            </p>
+                            <p className="animatedText project-desc">
+                                Debugging and production issue resolution
+                            </p>
+                            <p className="animatedText project-desc">
+                                Technical consulting and solution architecture
+                            </p>
+                            <p className="animatedText project-desc">
+                                Integration of third-party services and APIs
+                            </p>
+                            <p className="animatedText project-desc">
+                                Project support from concept to deployment (Agile/Scrum)
+                            </p>
 
-                        <p className="animatedText project-desc">
-                            Programming isn’t just my profession — it’s my passion. I love
-                            solving problems, learning new technologies, and continuously
-                            sharpening my craft.
-                        </p>
                     </div>
                 </div>
 
@@ -167,7 +196,7 @@ const About = () => {
                     />
 
                     <div className="space-y-3 text-center">
-                        <p className="grid-subtext pt-5">Contact me</p>
+                        <p className="animatedText text-xl font-semibold text-white">Contact me</p>
 
                         <div
                             className="copy-container flex justify-center items-center gap-3 cursor-pointer"
