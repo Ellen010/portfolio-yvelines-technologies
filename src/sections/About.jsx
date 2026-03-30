@@ -137,7 +137,7 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* PASSION */}
+                {/* SERVICES */}
                 <div className="grid-container">
                     <img
                         src="assets/grid3.png"
@@ -147,9 +147,8 @@ const About = () => {
 
                     <div className="space-y-3 pt-5">
                         <p className="animatedText text-xl font-semibold text-white">Services</p>
-                            <p className="animatedText project-desc">
+                            <p className="animatedText project-desc">Full-stack web and mobile application development (React, Next.js, Node.js, React Native)
                             </p>
-                            Full-stack web and mobile application development (React, Next.js, Node.js, React Native)
                             <p className="animatedText project-desc">
                                 Design and development of scalable SaaS platforms
                             </p>
@@ -162,28 +161,38 @@ const About = () => {
                             <p className="animatedText project-desc">
                                 AI integration (LLMs, automation workflows, intelligent features)
                             </p>
-                            <p className="animatedText project-desc">
-                                Cloud deployment and DevOps (CI/CD pipelines, Docker, serverless architecture)
-                            </p>
-                            <p className="animatedText project-desc">
-                                Performance optimization and code refactoring
-                            </p>
-                            <p className="animatedText project-desc">
-                                QA testing and technical audits (bug detection, UX issues, cross-browser testing)
-                            </p>
-                            <p className="animatedText project-desc">
-                                Debugging and production issue resolution
-                            </p>
-                            <p className="animatedText project-desc">
-                                Technical consulting and solution architecture
-                            </p>
-                            <p className="animatedText project-desc">
-                                Integration of third-party services and APIs
-                            </p>
-                            <p className="animatedText project-desc">
-                                Project support from concept to deployment (Agile/Scrum)
-                            </p>
+                    </div>
+                </div>
+                <div className="grid-container">
+                    <img
+                        src="assets/grid3.png"
+                        alt="Passion"
+                        className="w-full h-[200px] object-cover rounded-xl"
+                    />
 
+                    <div className="space-y-3 pt-5">
+                        <p className="animatedText text-xl font-semibold text-white">Services</p>
+                        <p className="animatedText project-desc">
+                            Cloud deployment and DevOps (CI/CD pipelines, Docker, serverless architecture)
+                        </p>
+                        <p className="animatedText project-desc">
+                            Performance optimization and code refactoring
+                        </p>
+                        <p className="animatedText project-desc">
+                            QA testing and technical audits (bug detection, UX issues, cross-browser testing)
+                        </p>
+                        <p className="animatedText project-desc">
+                            Debugging and production issue resolution
+                        </p>
+                        <p className="animatedText project-desc">
+                            Technical consulting and solution architecture
+                        </p>
+                        <p className="animatedText project-desc">
+                            Integration of third-party services and APIs
+                        </p>
+                        <p className="animatedText project-desc">
+                            Project support from concept to deployment (Agile/Scrum)
+                        </p>
                     </div>
                 </div>
 
@@ -192,7 +201,7 @@ const About = () => {
                     <img
                         src="assets/grid4.png"
                         alt="Contact"
-                        className="w-full h-[160px] object-cover rounded-xl"
+                        className="w-full h-[320px] object-cover rounded-xl"
                     />
 
                     <div className="space-y-3 text-center">
