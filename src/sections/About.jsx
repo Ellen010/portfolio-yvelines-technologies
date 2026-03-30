@@ -204,7 +204,7 @@ const About = () => {
                         className="w-full h-[320px] object-cover rounded-xl"
                     />
 
-                    <div className="space-y-3 text-center">
+                    <div className="space-y-8 text-center">
                         <p className="animatedText text-xl font-semibold text-white">Contact me</p>
 
                         <div
@@ -215,7 +215,7 @@ const About = () => {
                                 src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'}
                                 alt="copy"
                             />
-                            <p className="font-large text-white">
+                            <p className="font-medium text-white">
                                 yvelinestechnologies@gmail.com
                             </p>
                         </div>
