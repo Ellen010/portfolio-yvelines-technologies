@@ -165,7 +165,7 @@ const About = () => {
                 </div>
                 <div className="grid-container">
                     <img
-                        src="assets/grid3.png"
+                        src="assets/grid4.png"
                         alt="Passion"
                         className="w-full h-[200px] object-cover rounded-xl"
                     />
@@ -199,7 +199,7 @@ const About = () => {
                 {/* CONTACT */}
                 <div className="grid-container">
                     <img
-                        src="assets/grid4.png"
+                        src="assets/grid5.png"
                         alt="Contact"
                         className="w-full h-[320px] object-cover rounded-xl"
                     />
@@ -215,7 +215,7 @@ const About = () => {
                                 src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'}
                                 alt="copy"
                             />
-                            <p className="font-medium text-white">
+                            <p className="font-large text-white">
                                 yvelinestechnologies@gmail.com
                             </p>
                         </div>
